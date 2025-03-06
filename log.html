@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CTF Login - Wreckit</title>
+    <link rel="stylesheet" href="ctf_styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=VT323&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Background Matrix Effect -->
+    <canvas id="matrixCanvas"></canvas>
+
+    <!-- Sidebar -->
+    <div class="menu-btn" onclick="toggleSidebar()">&#9776;</div>
+    <div class="sidebar" id="sidebar">
+      <a href="javascript:void(0)" class="close-btn" onclick="toggleSidebar()"
+        >&times;</a
+      >
+      <a href="regis.html">Register</a>
+      <a href="verification.html">Verify</a>
+      <a href="about.html">Services</a>
+      <a href="ctf_index.html">Coming Soon</a>
+    </div>
+
+    <!-- Content Container -->
+    <div class="content-container">
+      <div class="glow-container">
+        <canvas id="glitchCanvas"></canvas>
+      </div>
+
+      <!-- Login Form -->
+      <div class="form-container">
+        <h1 class="form-title">Masuk</h1>
+        <p class="form-subtitle">Silahkan masuk ke akun yang telah terdaftar</p>
+        <form action="#" method="POST">
+          <label for="email">Email</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="email@gmail.com"
+            required
+          />
+
+          <label for="password">Kata Sandi</label>
+          <input
+            type="password"
+            id="password"
+            name="password"
+            placeholder="Masukkan sandi"
+            required
+          />
+
+          <button type="submit">Masuk</button>
+        </form>
+
+        <p class="login-redirect">
+          Lupa kata sandi? <a href="#">Klik di sini</a>
+        </p>
+        <p class="login-redirect">
+          Belum Punya Akun? <a href="regis.html">Daftar</a>
+        </p>
+      </div>
+    </div>
+
+    <script src="sidebar_script.js"></script>
+    <script src="ctf_script.js"></script>
+  </body>
+</html>

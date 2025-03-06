@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CTF Registration - Wreckit</title>
+    <link rel="stylesheet" href="ctf_styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=VT323&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Background Matrix Effect -->
+    <canvas id="matrixCanvas"></canvas>
+
+    <!-- Sidebar -->
+    <div class="menu-btn" onclick="toggleSidebar()">&#9776;</div>
+    <div class="sidebar" id="sidebar">
+      <a href="javascript:void(0)" class="close-btn" onclick="toggleSidebar()"
+        >&times;</a
+      >
+      <a href="regis.html">Register</a>
+      <a href="verification.html">Verify</a>
+      <a href="#">Services</a>
+      <a href="ctf_index.html">Coming Soon</a>
+    </div>
+
+    <!-- Content Container -->
+    <div class="content-container">
+      <div class="glow-container">
+        <canvas id="glitchCanvas"></canvas>
+      </div>
+
+      <!-- Registration Form -->
+      <div class="form-container">
+        <h1 class="form-title">Daftar</h1>
+        <p class="form-subtitle">Silahkan buat akun baru</p>
+        <form action="#" method="POST">
+          <label for="email">Email</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="Email@gmail.com"
+            required
+          />
+
+          <label for="password">Sandi</label>
+          <input
+            type="password"
+            id="password"
+            name="password"
+            placeholder="Masukkan sandi"
+            required
+          />
+
+          <label for="confirm-password">Konfirmasi Sandi</label>
+          <input
+            type="password"
+            id="confirm-password"
+            name="confirm-password"
+            placeholder="Konfirmasi sandi"
+            required
+          />
+
+          <button type="submit">Daftar</button>
+        </form>
+
+        <p class="login-redirect">
+          Sudah Punya Akun? <a href="log.html">Masuk</a>
+        </p>
+      </div>
+    </div>
+
+    <script src="sidebar_script.js"></script>
+    <script src="ctf_script.js"></script>
+  </body>
+</html>

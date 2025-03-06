@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Coming Soon - Wreckit</title>
+    <link rel="stylesheet" href="ctf_styles.css" />
+    <link rel="stylesheet" href="sidebar_styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Background Matrix Effect -->
+    <canvas id="matrixCanvas"></canvas>
+
+    <!-- Sidebar -->
+    <div class="menu-btn" onclick="toggleSidebar()">&#9776;</div>
+    <div class="sidebar" id="sidebar">
+      <a href="javascript:void(0)" class="close-btn" onclick="toggleSidebar()"
+        >&times;</a
+      >
+      <a href="regis.html">Register</a>
+      <a href="verification.html">Verify</a>
+      <a href="#">Services</a>
+      <a href="ctf_index.html">Coming Soon</a>
+    </div>
+
+    <!-- Content Container -->
+    <div class="content-container">
+      <div class="glow-container">
+        <canvas id="glitchCanvas"></canvas>
+      </div>
+      <h1 class="coming-soon-title">COMING SOON</h1>
+    </div>
+
+    <script src="sidebar_script.js"></script>
+    <script src="ctf_script.js"></script>
+  </body>
+</html>
