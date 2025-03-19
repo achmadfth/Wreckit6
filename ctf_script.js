@@ -26,7 +26,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
         for (let i = 0; i < drops.length; i++) {
             // Generate a random hexadecimal memory address-like string, e.g., 0xABCD
-            const hexValue = '0x' + Array.from({ length: 4 }).map(() => hexChars[Math.floor(Math.random() * hexChars.length)]).join('');
+            const hexValue = Array.from({ length: 1 }).map(() => hexChars[Math.floor(Math.random() * hexChars.length)]).join('');
             ctxMatrix.fillText(hexValue, i * fontSize, drops[i] * fontSize);
             if (drops[i] * fontSize > matrixCanvas.height && Math.random() > 0.975) {
                 drops[i] = 0;
